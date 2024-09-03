@@ -1,0 +1,29 @@
+.principal-container{
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    min-height: 400px;
+}
+h1{
+    margin-bottom: 30px;
+}
+.button-container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+button{
+    width: 90%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: large;
+}
