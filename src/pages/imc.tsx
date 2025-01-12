@@ -1,7 +1,7 @@
 // src/components/ImcCalculator.tsx
 import React, { useState } from 'react';
-import './imc.css'
-import ButtonBack from '../buttons/back-to-menu';
+
+import ButtonBack from './back-to-menu';
 
 const ImcCalculator: React.FC = () => {
   const [weight, setWeight] = useState<number>(0);

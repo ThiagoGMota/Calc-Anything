@@ -1,5 +1,5 @@
 import axios from 'axios';
-import ButtonBack from '../buttons/back-to-menu';
+import ButtonBack from './back-to-menu';
 import { useState } from 'react';
 
 interface CurrencyData {

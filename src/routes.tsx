@@ -1,30 +1,21 @@
 import { createBrowserRouter } from "react-router-dom";
-import Imc from "./components/imc/imc";
-import Home from "./components/home/home";
-import Math from "./components/math/math";
-import Moeda from './components/moeda/moeda';
+import Home from "./pages/home";
+import { pagesManager } from "./pages/managerPageRoute";
+import React from "react";
 
 
 const router = createBrowserRouter([
     {
-        path:'/',
+        path: '/',
         element: <Home />,
     },
     {
-        path:'/home',
+        path: '/home',
         element: <Home />,
     },
-    {
-        path: '/imc',
-        element: <Imc />
-    },
-    {
-        path: '/math',
-        element: <Math />
-    },
-    {
-        path: '/moeda',
-        element: < Moeda/>
-    }
-])
+    ...pagesManager.map(({ path, component }) => ({
+        path,
+        element: React.createElement(component),
+    })),
+]);
 export default router;

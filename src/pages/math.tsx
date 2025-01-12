@@ -1,4 +1,4 @@
-import ButtonBack from '../buttons/back-to-menu'
+import ButtonBack from './back-to-menu'
 
 function Math(){
 	return(
